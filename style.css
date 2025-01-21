@@ -135,6 +135,14 @@ button {
 }
 
 @media (width <= 430px) {
+  button:focus {
+    outline: none;
+  }
+
+  button:focus-visible {
+    outline: none;
+  }
+
   .button-wrapper {
     flex-direction: column;
   }
