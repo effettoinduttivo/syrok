@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+.page {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  inline-size: 100vw;
+  block-size: 100vh;
+  position: relative;
+  background-image: url(https://kinpet.ru/upload/iblock/8ee/7lpx9juk4o59hcf69sszlamlpq2trb2n/b1fon.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.syrok__button {
+  padding: 18px 60px;
+  background-color: rgb(255, 228, 225, 0.7);
+  border: 3px solid firebrick;
+  border-radius: 10px;
+  font-size: clamp(1.125rem, 0.7229rem + 1.7154vw, 2.1875rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 lightpink, -1px -1px 0 lightpink, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  color: maroon;
+  box-shadow: 3px 3px 3px tomato;
+  transition: color 0.3s linear;
+  transition: border-color 0.3s linear;
+  transition: box-shadow 0.5s linear;
+}
+
+.syrok__button:hover {
+  color: crimson;
+  border-color: mediumvioletred;
+  box-shadow: 10px 10px 20px crimson;
+}
+
+.syrok__dialog {
+  padding: 50px;
+  background-color: rgb(219, 153, 181);
+  border: 3px solid rgb(221, 14, 125);
+  border-radius: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(2.1875rem, 1.478rem + 3.0272vw, 4.0625rem);
+  font-weight: 700;
+  color: brown;
+}
+
+.syrok__dialog::backdrop {
+  background-color: #000;
+  opacity: 0.75;
+}
+
+.pistryn {
+  text-align: center;
+  margin-block-end: 25px;
+  text-shadow: 1px 1px 0 lightpink, -1px -1px 0 lightpink, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.button-wrapper {
+  margin-inline: auto;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.pistryn__button {
+  inline-size: 22vw;
+  block-size: 80px;
+  border: 2px solid rgb(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pistryn__button:hover {
+  transition: transform 0.3s linear;
+  transform: scale(1.1);
+}
+
+.agree {
+  background-color: mediumseagreen;
+  transition: box-shadow 0.3s linear;
+}
+
+.agree:hover {
+  box-shadow: 7px 7px 7px lightgreen;
+}
+
+.disagree {
+  background-color: tomato;
+  transition: box-shadow 0.3s linear;
+}
+
+.disagree:hover {
+  box-shadow: 7px 7px 7px lightcoral;
+}
+
+@media (width <= 430px) {
+  .button-wrapper {
+    flex-direction: column;
+  }
+
+  .pistryn__button {
+    inline-size: 60vw;
+  }
+}
