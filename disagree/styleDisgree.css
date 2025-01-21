@@ -129,7 +129,7 @@ button {
   transition: transform 0.3s linear;
 }
 
-@media (width <= 430px) {
+@media (width <= 768px) {
   .wrapper {
     inline-size: 100vw;
   } 
